@@ -5,9 +5,6 @@ from bs4 import BeautifulSoup
 import sys
 
 def pull(position, yearinput, weekinput):
-    #position = input('What position would you like to pull data for:')
-    #yearinput = input('What year would you like to pull data for:')
-    #weekinput = input('What week would you like to pull data for:')
     if position == 'QB':
         df = pd.DataFrame(columns=['Year',
                                    'Week',
@@ -504,23 +501,9 @@ def combine():
     df.to_csv(input('Type file name here:')+'.csv',index=False)
     print("File saved in folder")
 
-def teamcorrection(df1, df2):
-    # reading csv files
-    #df1 = pd.read_csv(input('Type position file name here:')+'.csv')
-    #df2 = pd.read_csv(input('Type teamname correction file name here:')+'.csv')
+def teamcorrection(file1,file2):
+    df1 = pd.read_csv(file1)
+    df2 = pd.read_csv(file2)
     df3 = pd.merge(df1, df2, on=['Year', 'Week','Player'], how='left')
     df3.to_csv(input('Type corrected teamname file here')+'.csv',index=False)
     print("File saved in folder")
-
-if __name__ == '__main__':
-    #position = sys.argv[1]
-    #year = sys.argv[2]
-    #week = sys.argv[3]
-
-    #pull(position,year,week)
-    teamyear = sys.argv[1]
-    teamweek = sys.argv[2]
-    teamnamepull(teamyear,teamweek)
-    #teamcorrectfile1 = sys.argv[6]
-    #teamcorrectfile2 = sys.argv[7]
-    #teamcorrection(df1,df2)
