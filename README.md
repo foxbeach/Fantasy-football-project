@@ -25,3 +25,9 @@ The hypothesis of this project is that there is a relationship between overall t
 
 	* Fantasy Pros Official Website (https://www.fantasypros.com/nfl/stats/qb.php) 
 	* Fantasy Pros GitHub repository (https://github.com/fantasydatapros/data.git)
+
+## Getting Started
+
+1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
+2. Raw Data is being kept [DataOutput](Repo folder containing raw data) within this repo.
+3. Data processing/transformation scripts are being kept [Scripts](Repo folder containing data processing scripts/notebooks)
