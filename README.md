@@ -29,5 +29,5 @@ The hypothesis of this project is that there is a relationship between overall t
 ## Getting Started
 
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [DataOutput](Repo folder containing raw data) within this repo.
-3. Data processing/transformation scripts are being kept [Scripts](Repo folder containing data processing scripts/notebooks)
+2. Raw Data is being kept [DataOutput](https://github.com/foxbeach/Fantasy-football-project/tree/main/DataOutput) within this repo.
+3. Data processing/transformation scripts are being kept [Scripts](https://github.com/foxbeach/Fantasy-football-project/tree/main/Scripts)
